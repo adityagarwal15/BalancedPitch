@@ -1,4 +1,3 @@
-```markdown
 # 🎵 Balanced Pitch | Ethical AI for Music
 
 Balanced Pitch is an interactive, modern, and ethically-driven AI music platform. Built with a sleek, animated frontend using React, Vite, Framer Motion, GSAP, and Lenis, it delivers smooth performance, aesthetic visuals, and seamless transitions, ensuring a unique user experience for musicians and listeners alike.
@@ -29,7 +28,7 @@ Balanced Pitch is an interactive, modern, and ethically-driven AI music platform
 - **JavaScript**: ES6+ for modern scripting
 
 ## 📦 Installation & Development
-
+```
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/adityagarwal15/BalancedPitch.git
@@ -111,7 +110,7 @@ Special thanks to:
 - **React and Vite Communities**: For ongoing support and resources
 
 ## 📬 Connect with Me
-- [Portfolio Website](https://your-portfolio-website.com)
-- [LinkedIn](https://www.linkedin.com/in/your-profile)
+- [Portfolio Website](https://adityagarwal.netlify.app/)
+- [LinkedIn](https://www.linkedin.com/in/adityagarwal15)
 - [GitHub](https://github.com/adityagarwal15)
 ```
