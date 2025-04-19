@@ -1,8 +1,117 @@
-# React + Vite
+```markdown
+# 🎵 Balanced Pitch | Ethical AI for Music
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Balanced Pitch is an interactive, modern, and ethically-driven AI music platform. Built with a sleek, animated frontend using React, Vite, Framer Motion, GSAP, and Lenis, it delivers smooth performance, aesthetic visuals, and seamless transitions, ensuring a unique user experience for musicians and listeners alike.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Frontend
+- **React**: Component-based UI library
+- **React Router**: Client-side routing
+- **Framer Motion**: Animation library for React
+- **GSAP**: GreenSock Animation Platform for advanced animations
+- **Lenis**: Smooth scrolling library
+
+### Build Tool
+- **Vite**: Fast, modern build tool
+
+### Styling
+- **CSS**: Custom fonts and responsive design
+
+### Linting & Code Quality
+- **ESLint**: JavaScript linting for code consistency
+
+### Package Manager
+- **npm**: Dependency management
+
+### Other
+- **HTML5**: Semantic markup
+- **JavaScript**: ES6+ for modern scripting
+
+## 📦 Installation & Development
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/adityagarwal15/BalancedPitch.git
+cd BalancedPitch
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Run Development Server
+```bash
+npm run dev
+```
+
+### 4. Build for Production
+```bash
+npm run build
+```
+
+## 🌐 Deployment
+
+Balanced Pitch is deployed via **Vercel**.
+
+### Vercel Settings
+- **Framework Preset**: Vite
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist`
+- **Install Command**: `npm install`
+
+### 📱 Manifest Configuration
+Located in `public/manifest.json`:
+```json
+{
+  "short_name": "BalancedPitch",
+  "name": "Balanced Pitch | Ethical AI for Music",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#000000",
+  "theme_color": "#d6ff62",
+  "display": "standalone"
+}
+```
+
+## 📸 Screenshot
+![Portfolio Screenshot](https://res.cloudinary.com/dcf0cpuqf/image/upload/v1735073629/Screenshot_2024-12-25_021950_eznls8.png)
+
+## 🎥 Walkthrough Video
+[![Portfolio Walkthrough](https://res.cloudinary.com/dcf0cpuqf/image/upload/v1735073629/Screenshot_2024-12-25_021950_eznls8.png)](https://res.cloudinary.com/dcf0cpuqf/video/upload/v1735073671/Portfolio_walkthrough_v2zpir.mp4)
+
+> Click the image above to watch the video!
+
+## ✨ Features
+- Smooth animations powered by GSAP and Framer Motion
+- Ethical AI-driven concept tailored for the music industry
+- Custom scrollbars and smooth scrolling with Lenis
+- Responsive, modern UI with custom fonts
+- Optimized build process with Vite
+
+## 📜 License
+This project is licensed under the **MIT License**.
+
+## 🙌 Acknowledgements
+Special thanks to:
+- **Studio Freight**: For Lenis and design inspiration
+- **GreenSock Animation Platform**: For GSAP
+- **React and Vite Communities**: For ongoing support and resources
+
+## 📬 Connect with Me
+- [Portfolio Website](https://your-portfolio-website.com)
+- [LinkedIn](https://www.linkedin.com/in/your-profile)
+- [GitHub](https://github.com/adityagarwal15)
+```
