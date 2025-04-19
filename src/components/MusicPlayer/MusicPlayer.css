@@ -1,0 +1,125 @@
+.player-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 4em 2em;
+}
+
+.vinyl-container {
+  width: 70%;
+  aspect-ratio: 1;
+  margin: 0 auto 24px;
+  background: #fff;
+  perspective: 1000px;
+}
+
+.disk-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.disk-side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.disk-side.front {
+  transform: rotateY(0deg);
+}
+
+.disk-side.back {
+  transform: rotateY(180deg);
+}
+
+.vinyl-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.vinyl-container img.spinning {
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.song-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.song-info h2 {
+  color: var(--color-dark);
+  font-size: 2vw;
+  font-weight: 300;
+  margin: 0 0 0.5em 0;
+}
+
+.song-info p {
+  color: var(--color-dark);
+  margin: 0.25em 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.control-button {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-dark);
+  background-color: transparent !important;
+}
+
+.control-button svg {
+  fill: transparent;
+}
+
+.play-button {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-dark) !important;
+}
+
+button:focus {
+  outline: none;
+  border: none;
+  outline-offset: 2px;
+}
+
+svg {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .song-info h2 {
+    font-size: 8vw;
+  }
+}

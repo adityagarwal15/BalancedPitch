@@ -1,0 +1,139 @@
+:root {
+  --color-accent: #c8f95a;
+--color-light: #fdfdfd;
+--color-dark: #0a0a0a;
+}
+
+@font-face {
+  font-family: "FK Screamer";
+  font-weight: 300;
+  src: url("./assets/fonts/fk-screamer.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-weight: 200;
+  src: url("./assets/fonts/pp-editorial-new-thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-weight: 300;
+  src: url("./assets/fonts/pp-editorial-new-ultralight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-weight: 500;
+  src: url("./assets/fonts/pp-editorial-new-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-weight: 700;
+  src: url("./assets/fonts/pp-editorial-new-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-weight: 800;
+  src: url("./assets/fonts/pp-editorial-new-heavy.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  font-size: 16vw;
+  font-weight: 300;
+  line-height: 0.8;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  font-size: 12vw;
+  font-weight: 300;
+  line-height: 0.8;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  font-size: 4vw;
+  font-weight: 300;
+  line-height: 0.9;
+}
+
+p.primary {
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+p,
+span,
+a {
+  text-decoration: none;
+  font-family: "PP Editorial New";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.15;
+}
+
+button {
+  position: relative;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0.5em 1em 0.75em 1em;
+  background-color: var(--color-accent) !important;
+}
+
+button a {
+  color: var(--color-dark);
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  font-weight: 300;
+  font-size: 28px;
+}
+
+.page {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-dark);
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 24vw;
+  }
+
+  h2 {
+    font-size: 20vw;
+  }
+
+  h3 {
+    font-size: 10vw;
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "short_name": "BalancedPitch",
+    "name": "Balanced Pitch | Ethical AI for Music",
+    "icons": [
+      {
+        "src": "/icon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/icon-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#000000",
+    "theme_color": "#d6ff62",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "description": "Balanced Pitch pioneers ethical AI datasets and tools for the music industry, empowering artists and creators with transparency and innovation.",
+    "lang": "en"
+  }
+  

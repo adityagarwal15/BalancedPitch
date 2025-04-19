@@ -1,0 +1,42 @@
+/* Custom Scrollbar Styles */
+
+/* WebKit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--color-dark);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c4ec4f;
+  }
+  
+  /* Firefox */
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) var(--color-dark);
+    overflow-x: hidden; /* Hide horizontal scroll globally */
+  }
+  
+  /* CSS Reset */
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #d6ff62, #c4ec4f);
+  }
+  

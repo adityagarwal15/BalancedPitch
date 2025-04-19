@@ -1,0 +1,243 @@
+section.contact-hero {
+  position: relative;
+  width: 100vw;
+  height: 175vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5em;
+}
+
+.contact-hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-hero-header {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-hero-header h1 {
+  color: var(--color-accent);
+  font-size: 20.5vw;
+}
+
+.contact-hero-header .stickers {
+  width: 40%;
+  margin: 3em auto;
+}
+
+.contact-form {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  gap: 1em;
+}
+
+.form-col:nth-child(1) {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-col:nth-child(2) {
+  flex: 3;
+}
+
+.form-header {
+  color: var(--color-accent);
+  background-color: var(--color-dark);
+  padding: 1em;
+}
+
+.form-header p.primary,
+.join-our-team p.primary,
+.careers-cta p a,
+.submit-btn p a {
+  font-family: "FK Screamer";
+  font-size: 36px;
+  margin-bottom: 0.5em;
+}
+
+.form-header button {
+  margin-top: 3em;
+}
+
+.join-our-team p.primary {
+  color: var(--color-accent);
+}
+
+.join-our-team p {
+  color: var(--color-light);
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: 1em 0;
+}
+
+.careers-cta {
+  margin-top: 1em;
+}
+
+.careers-cta p a,
+.submit-btn p a {
+  font-family: "FK Screamer";
+  font-size: 28px;
+  color: var(--color-accent);
+}
+
+.careers-cta p a {
+  color: var(--color-accent);
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+}
+
+.form-row {
+  width: 100%;
+  display: flex;
+  gap: 0.35em;
+}
+
+.form-row .form-item {
+  flex: 1;
+}
+
+.form-item {
+  width: 100%;
+}
+
+.form-item input,
+.form-item textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.35em;
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--color-dark);
+  background-color: var(--color-accent);
+}
+
+.form-item input::placeholder,
+.form-item textarea::placeholder {
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  color: var(--color-dark);
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+section.contact-banner {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: var(--color-light);
+}
+
+.contact-banner-col:nth-child(1) {
+  position: relative;
+  flex: 3;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-banner-col p {
+  color: var(--color-dark);
+}
+
+.contact-banner-col:nth-child(2) {
+  position: relative;
+  flex: 2;
+}
+
+.contact-banner-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.contact-banner-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  color: var(--color-dark);
+}
+
+.contact-banner-header p.primary {
+  font-size: 30px;
+}
+
+.banner-contact p.primary {
+  margin-bottom: 0.25em;
+}
+
+.banner-info {
+  width: 75%;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  section.contact-banner {
+    flex-direction: column-reverse;
+    height: 175vh;
+  }
+
+  .contact-hero-header {
+    width: 90%;
+  }
+
+  .contact-hero-header h1 {
+    font-size: 22vw;
+  }
+
+  .contact-hero-header .stickers {
+    width: 90%;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .form-col:nth-child(1) {
+    gap: 2em;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+}

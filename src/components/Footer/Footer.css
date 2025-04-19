@@ -1,0 +1,152 @@
+.footer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.footer-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-bg div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale(2);
+}
+
+.footer-bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-nav {
+  position: absolute;
+  padding: 1em;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav-link a {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.footer-outro {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-accent);
+  padding: 1.5em;
+}
+
+.footer-col:nth-child(2) {
+  text-align: right;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.footer-col h3 {
+  font-size: 5.5vw;
+}
+
+.footer-col p.primary {
+  font-size: 30px;
+  margin-bottom: 2em;
+}
+
+.footer-form {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-accent);
+  text-align: center;
+  padding: 2em;
+}
+
+.footer-form p.primary {
+  font-size: 48px;
+  margin-bottom: 0.125em;
+}
+
+.footer-form p {
+  font-size: 24px;
+  color: var(--color-dark);
+  margin-bottom: 1em;
+}
+
+.footer-form span {
+  font-size: 16px;
+  padding: 1em;
+}
+
+.footer-ws {
+  width: 100%;
+  height: 10px;
+}
+
+.footer-input {
+  width: 100%;
+  margin: 0.25em 0;
+}
+
+.footer-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.35em;
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--color-accent);
+  background-color: var(--color-dark);
+}
+
+.footer-input input::placeholder {
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  color: var(--color-accent);
+}
+
+.footer-submit {
+  margin: 1em 0;
+}
+
+.footer-submit a {
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--color-dark);
+}
+
+@media (max-width: 900px) {
+  .footer-form {
+    bottom: unset;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 2em);
+  }
+
+  .footer-col p.primary {
+    margin-bottom: 1em;
+    font-size: 24px;
+  }
+}

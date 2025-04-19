@@ -1,0 +1,275 @@
+.solutions-hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5em 0 2em 0;
+  text-align: center;
+}
+
+.solutions-hero-img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.solutions-hero-header {
+  position: relative;
+}
+
+.solutions-hero-header h1 {
+  font-size: 21.5vw;
+  color: var(--color-accent);
+}
+
+.solutions-hero-header .stickers {
+  width: 50%;
+  margin: 3em auto;
+}
+
+.solutions-hero-info {
+  position: relative;
+  display: flex;
+  gap: 1em;
+  padding: 0.5em 1em 0.75em 1em;
+  background-color: var(--color-dark);
+}
+
+.solutions-hero-info p {
+  font-size: 28px;
+  color: var(--color-accent);
+}
+
+.features {
+  position: relative;
+  width: 100%;
+  padding: 15em 1em;
+  background-color: var(--color-light);
+}
+
+.features-header,
+.features-copy {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.features-col {
+  position: relative;
+  flex: 1;
+  width: 100%;
+}
+
+.features-header {
+  height: 260px;
+  margin-bottom: 3em;
+}
+
+.features-header .features-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-header img {
+  position: absolute;
+  object-fit: contain;
+}
+
+.features-header h3 {
+  position: relative;
+  top: -8px;
+  color: var(--color-accent);
+  font-style: italic;
+  transform: rotate(-10deg);
+  text-align: center;
+  line-height: 0.8;
+}
+
+.features-copy {
+  padding: 1em 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.feature-title {
+  display: flex;
+}
+
+.feature-title p {
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.feature-title p:nth-child(1) {
+  flex: 1;
+}
+
+.feature-title p:nth-child(2) {
+  flex: 4;
+}
+
+.solutions-callout {
+  position: relative;
+  width: 100vw;
+  height: 125vh;
+  overflow: hidden;
+}
+
+.callout-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.callout-copy {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  width: 35%;
+  color: var(--color-light);
+}
+
+.callout-copy h2 {
+  font-size: 8vw;
+  margin-bottom: 0.25em;
+}
+
+.callout-copy p {
+  width: 85%;
+}
+
+section.rights {
+  position: relative;
+  width: 100vw;
+  color: var(--color-dark);
+  background-color: var(--color-accent);
+  text-align: center;
+  padding: 4em 1em;
+}
+
+.rights h1 {
+  margin-bottom: 0.075em;
+  font-size: 21vw;
+}
+
+.rights h3 {
+  margin-bottom: 0.75em;
+  font-size: 7.5vw;
+}
+
+.rights p.tagline {
+  font-weight: 500;
+  width: 100%;
+}
+
+.rights p {
+  width: 35%;
+  margin: 1em auto;
+}
+
+.rights-list {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  color: var(--color-light);
+}
+
+.right {
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  padding: 8em 2em;
+  flex: 1;
+  text-align: center;
+  background-color: var(--color-dark);
+}
+
+.right-index,
+.right-title {
+  color: var(--color-accent);
+}
+
+.right-title h3 {
+  font-size: 3vw;
+  margin: 0.25em 0 0.5em 0;
+}
+
+.right-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-desc-line {
+  padding: 1em 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.right-desc .right-desc-line:last-child {
+  border-bottom: none;
+}
+
+.features-copy:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 900px) {
+  .page.solutions .solutions-hero-info {
+    width: 90%;
+  }
+
+  .features-header,
+  .features-copy {
+    width: calc(100% - 2em);
+    gap: 0.5em;
+  }
+
+  .features-header h3 {
+    top: -4px;
+    font-size: 8vw;
+  }
+
+  .solutions-callout {
+    height: 100vh;
+  }
+
+  .callout-copy {
+    width: calc(100% - 2em);
+  }
+
+  .callout-copy h2 {
+    font-size: 14vw;
+  }
+
+  .rights h1 {
+    font-size: 30vw;
+  }
+
+  .rights p {
+    width: calc(100% - 2em);
+  }
+
+  .rights-list {
+    flex-direction: column;
+  }
+
+  .right {
+    padding: 6em 2em;
+    margin: 1em;
+  }
+
+  .right p {
+    font-size: 30px;
+  }
+
+  .right-title h3 {
+    font-size: 8vw;
+  }
+
+  .solutions-hero-img div {
+    transform: scale(3);
+  }
+}
