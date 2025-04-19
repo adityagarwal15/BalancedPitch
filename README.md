@@ -28,7 +28,7 @@ Balanced Pitch is an interactive, modern, and ethically-driven AI music platform
 - **JavaScript**: ES6+ for modern scripting
 
 ## 📦 Installation & Development
-```
+
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/adityagarwal15/BalancedPitch.git
@@ -86,10 +86,10 @@ Located in `public/manifest.json`:
 ```
 
 ## 📸 Screenshot
-![Portfolio Screenshot](https://res.cloudinary.com/dcf0cpuqf/image/upload/v1735073629/Screenshot_2024-12-25_021950_eznls8.png)
+![Portfolio Screenshot](https://res.cloudinary.com/dcf0cpuqf/image/upload/v1745087100/og-banner_fcrx9j.png)
 
 ## 🎥 Walkthrough Video
-[![Portfolio Walkthrough](https://res.cloudinary.com/dcf0cpuqf/image/upload/v1735073629/Screenshot_2024-12-25_021950_eznls8.png)](https://res.cloudinary.com/dcf0cpuqf/video/upload/v1735073671/Portfolio_walkthrough_v2zpir.mp4)
+[![Portfolio Walkthrough](https://res.cloudinary.com/dcf0cpuqf/image/upload/v1745087100/og-banner_fcrx9j.png)](https://res.cloudinary.com/dcf0cpuqf/video/upload/v1745092437/balanced_video_ndakjd.mp4)
 
 > Click the image above to watch the video!
 
@@ -113,4 +113,3 @@ Special thanks to:
 - [Portfolio Website](https://adityagarwal.netlify.app/)
 - [LinkedIn](https://www.linkedin.com/in/adityagarwal15)
 - [GitHub](https://github.com/adityagarwal15)
-```
