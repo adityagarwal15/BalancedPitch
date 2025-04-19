@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap:https://balancedpitch.vercel.app/sitemap.xml
