@@ -102,7 +102,7 @@ const About = () => {
                   <p>
                     Aditya brings over three decades of experience in the music
                     industry, combining a career as a composer, producer, and
-                    innovator. With a deep commitment to artists' rights, Alex
+                    innovator. With a deep commitment to artists' rights, Aditya
                     leads Balanced Pitch in shaping a fair and sustainable
                     future for music in the AI era.
                   </p>
