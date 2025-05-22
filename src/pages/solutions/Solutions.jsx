@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import Footer from "../../components/Footer/Footer";
 import Transition from "../../components/Transition/Transition";
 import ParallaxImage from "../../components/ParallaxImage/ParallaxImage";
@@ -12,6 +13,36 @@ const Solutions = () => {
 
   return (
     <ReactLenis root>
+       <Helmet>
+        <title>Solutions | Balanced Pitch</title>
+        <meta
+          name="description"
+          content="Explore Balanced Pitch's ethical AI solutions for the music industry—empowering creators, ensuring fair attribution, and setting new standards for creative rights and data innovation."
+        />
+        <meta property="og:title" content="Solutions | Balanced Pitch" />
+        <meta property="og:description" content="Discover ethical AI, artist attribution, secure datasets, and innovation-driven solutions at Balanced Pitch—pioneering a fair and transparent music industry." />
+        <meta property="og:image" content="https://res.cloudinary.com/dcf0cpuqf/image/upload/v1745087100/og-banner_fcrx9j.png" />
+        <meta property="og:url" content="https://balancedpitch.vercel.app/solutions" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://balancedpitch.vercel.app/solutions" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Solutions | Balanced Pitch",
+              "description": "Explore Balanced Pitch's ethical AI solutions for the music industry—empowering creators, ensuring fair attribution, and setting new standards for creative rights and data innovation.",
+              "url": "https://balancedpitch.vercel.app/solutions",
+              "image": "https://res.cloudinary.com/dcf0cpuqf/image/upload/v1745087100/og-banner_fcrx9j.png",
+              "publisher": {
+                "@type": "Organization",
+                "name": "Balanced Pitch",
+                "url": "https://balancedpitch.vercel.app"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
       <div className="page solutions">
         <section className="solutions-hero about-hero">
           <div className="solutions-hero-img">

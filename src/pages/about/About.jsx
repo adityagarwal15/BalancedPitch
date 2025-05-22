@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import { Helmet } from "react-helmet-async";
 import Footer from "../../components/Footer/Footer";
 import Transition from "../../components/Transition/Transition";
 import ParallaxImage from "../../components/ParallaxImage/ParallaxImage";
@@ -13,6 +14,36 @@ const About = () => {
 
   return (
     <ReactLenis root>
+       <Helmet>
+        <title>About | Balanced Pitch</title>
+        <meta
+          name="description"
+          content="Learn about the story, mission, team, and values behind Balanced Pitch—championing artists’ rights and defining ethical AI standards in the music industry."
+        />
+        <meta property="og:title" content="About | Balanced Pitch" />
+        <meta property="og:description" content="Discover Balanced Pitch's journey, our dedication to ethical AI, and our commitment to empowering artists and creators in a technology-driven future." />
+        <meta property="og:image" content="https://res.cloudinary.com/dcf0cpuqf/image/upload/v1745087100/og-banner_fcrx9j.png" />
+        <meta property="og:url" content="https://balancedpitch.vercel.app/about" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://balancedpitch.vercel.app/about" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "AboutPage",
+              "name": "About | Balanced Pitch",
+              "description": "Learn about the story, mission, and values behind Balanced Pitch—championing artists’ rights and defining ethical AI standards in the music industry.",
+              "url": "https://balancedpitch.vercel.app/about",
+              "image": "https://res.cloudinary.com/dcf0cpuqf/image/upload/v1745087100/og-banner_fcrx9j.png",
+              "publisher": {
+                "@type": "Organization",
+                "name": "Balanced Pitch",
+                "url": "https://balancedpitch.vercel.app"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
       <div className="page about">
         <section className="solutions-hero about-hero">
           <div className="solutions-hero-img">
