@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router";
 import Footer from "../../components/Footer/Footer";
 import Transition from "../../components/Transition/Transition";
@@ -13,6 +14,36 @@ const Updates = () => {
 
   return (
     <ReactLenis root>
+       <Helmet>
+        <title>Updates | Balanced Pitch</title>
+        <meta
+          name="description"
+          content="Stay up-to-date with the latest news, resources, and industry advancements from Balanced Pitch—your source for ethical AI, artist advocacy, and music technology updates."
+        />
+        <meta property="og:title" content="Updates | Balanced Pitch" />
+        <meta property="og:description" content="Explore the latest updates and news from Balanced Pitch, including AI ethics, policy reforms, artist stories, and the future of music innovation." />
+        <meta property="og:image" content="https://res.cloudinary.com/dcf0cpuqf/image/upload/v1745087100/og-banner_fcrx9j.png" />
+        <meta property="og:url" content="https://balancedpitch.vercel.app/updates" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://balancedpitch.vercel.app/updates" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",
+              "name": "Updates | Balanced Pitch",
+              "description": "Stay up-to-date with the latest news, resources, and industry advancements from Balanced Pitch—your source for ethical AI, artist advocacy, and music technology updates.",
+              "url": "https://balancedpitch.vercel.app/updates",
+              "image": "https://res.cloudinary.com/dcf0cpuqf/image/upload/v1745087100/og-banner_fcrx9j.png",
+              "publisher": {
+                "@type": "Organization",
+                "name": "Balanced Pitch",
+                "url": "https://balancedpitch.vercel.app"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
       <div className="page updates">
         <section className="updates-hero">
           <h1>Latest Updates</h1>
