@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router";
 import Footer from "../../components/Footer/Footer";
 import Transition from "../../components/Transition/Transition";
@@ -13,6 +14,36 @@ const Contact = () => {
 
   return (
     <ReactLenis root>
+       <Helmet>
+        <title>Contact | Balanced Pitch</title>
+        <meta
+          name="description"
+          content="Contact Balanced Pitch to take a stand for fair AI in music. Connect with us to drive ethical innovation and protect artist rights in the AI era."
+        />
+        <meta property="og:title" content="Contact | Balanced Pitch" />
+        <meta property="og:description" content="Reach out to Balanced Pitch for collaboration, careers, or to join our mission for ethical AI in the music industry." />
+        <meta property="og:image" content="https://res.cloudinary.com/dcf0cpuqf/image/upload/v1745087100/og-banner_fcrx9j.png" />
+        <meta property="og:url" content="https://balancedpitch.vercel.app/contact" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://balancedpitch.vercel.app/contact" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "ContactPage",
+              "name": "Contact | Balanced Pitch",
+              "description": "Contact Balanced Pitch for ethical AI in music, careers, and collaboration.",
+              "url": "https://balancedpitch.vercel.app/contact",
+              "image": "https://res.cloudinary.com/dcf0cpuqf/image/upload/v1745087100/og-banner_fcrx9j.png",
+              "publisher": {
+                "@type": "Organization",
+                "name": "Balanced Pitch",
+                "url": "https://balancedpitch.vercel.app"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
       <div className="page contact">
         <section className="contact-hero">
           <div className="contact-hero-img">
