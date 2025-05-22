@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router";
 import Footer from "../../components/Footer/Footer";
 import Transition from "../../components/Transition/Transition";
@@ -36,6 +37,34 @@ const Home = () => {
 
   return (
     <ReactLenis root>
+       <Helmet>
+        <title>Balanced Pitch | Ethical AI for Music</title>
+        <meta
+          name="description"
+          content="Balanced Pitch pioneers ethical AI datasets and tools for the music industry, empowering artists and creators with transparency and innovation."
+        />
+        <meta property="og:title" content="Balanced Pitch | Ethical AI for Music" />
+        <meta property="og:description" content="Join the movement for artist rights and ethical AI practices in music. Discover innovative AI solutions with transparency at Balanced Pitch." />
+        <meta property="og:image" content="https://res.cloudinary.com/dcf0cpuqf/image/upload/v1745087100/og-banner_fcrx9j.png" />
+        <meta property="og:url" content="https://balancedpitch.vercel.app" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://balancedpitch.vercel.app" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Balanced Pitch",
+              "url": "https://balancedpitch.vercel.app",
+              "logo": "https://res.cloudinary.com/dcf0cpuqf/image/upload/v1745087100/og-banner_fcrx9j.png",
+              "sameAs": [
+                "https://www.linkedin.com/in/adityagarwal15",
+                "https://github.com/adityagarwal15"
+              ]
+            }
+          `}
+        </script>
+      </Helmet>
       <div className="page home">
         <section className="hero">
           <div className="hero-img">
