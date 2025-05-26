@@ -60,31 +60,6 @@ Balanced Pitch is deployed via **Vercel**.
 - **Output Directory**: `dist`
 - **Install Command**: `npm install`
 
-### 📱 Manifest Configuration
-Located in `public/manifest.json`:
-```json
-{
-  "short_name": "BalancedPitch",
-  "name": "Balanced Pitch | Ethical AI for Music",
-  "icons": [
-    {
-      "src": "/icon-192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "/icon-512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": "/",
-  "background_color": "#000000",
-  "theme_color": "#d6ff62",
-  "display": "standalone"
-}
-```
-
 ## 📸 Screenshot
 ![Portfolio Screenshot](https://res.cloudinary.com/dcf0cpuqf/image/upload/v1745087100/og-banner_fcrx9j.png)
 
