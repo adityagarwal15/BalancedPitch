@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@studio-freight/react-lenis": "^0.0.47",
+    "@vercel/speed-insights": "^1.2.0",
     "framer-motion": "^11.11.17",
     "gsap": "^3.12.5",
     "helmet": "^8.1.0",

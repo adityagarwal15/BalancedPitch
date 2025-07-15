@@ -4,6 +4,8 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import { injectSpeedInsights } from "@vercel/speed-insights";
+injectSpeedInsights();
 
 createRoot(document.getElementById("root")).render(
   <HelmetProvider>
