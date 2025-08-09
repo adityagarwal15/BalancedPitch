@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { injectSpeedInsights } from "@vercel/speed-insights";
+import { Analytics } from "@vercel/analytics/react";
 injectSpeedInsights();
 
 createRoot(document.getElementById("root")).render(
@@ -13,6 +14,7 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/*" element={<App />} />
       </Routes>
+      <Analytics />
     </Router>
   </HelmetProvider>
 );
